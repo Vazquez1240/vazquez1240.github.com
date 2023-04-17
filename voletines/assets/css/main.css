@@ -1,0 +1,121 @@
+html{
+    font-family:'Lato', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #d500f9;
+}
+a:hover{
+    opacity: 0.89;
+    color:red;
+}
+a:active{
+    color:blue;
+}
+
+.title{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.paragraph{
+    line-height: 1.8em;
+    font-weight: 300;
+}
+
+.table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table td, .table th{
+    padding:1em;
+    text-align: left;
+}
+
+.container{
+    background: #642B73;
+    background: -webkit-linear-gradient(to right, #C6426E, #642B73);
+    background: linear-gradient(to right, #C6426E, #642B73);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+
+}
+.content{
+    max-width: 960px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 15px;
+    position: relative;
+    padding: 1.8em;
+
+}
+
+.action{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+
+}
+
+/*https://daneden.github.oi/animate.css/ */
+.close{
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: #642b79;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    cursor: pointer;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.table tr:nth-child(even){
+    background-color:#f3e5f5;
+}
+
+.estrella{
+    cursor: pointer;
+    color: #ffc400;
+}
+.vacia{
+    color: #a4a4a4;
+}
+
+
+.title-item{
+    border-bottom: solid 2px #c6426e;
+    padding-bottom: 1em;
+    font-size: 2em;
+}
+
+.position{
+    background-color:#c6426e;
+    color: white;
+    margin-right: 0.5em;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.address{
+    font-weight: bold;
+    color: #642b73;
+    font-size: 1.2em;
+}
+
+.image{
+    float: left;
+    margin-right: 1em;
+    height: 250px;
+}
