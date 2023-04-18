@@ -57,10 +57,27 @@ a:active{
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0), 0 3px 6px rgba(0, 0, 0, 0.23);
     border-radius: 15px;
     position: relative;
-    padding: 1.8em;
     overflow: scroll;
 
 }
+
+.content{
+    padding: 1em;
+}
+td{
+    display: block;
+}
+td:nth-of-type(1){
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #642B73;
+}
+th{
+    display: none;
+    width: 100%;
+    
+}
+
 
 .action{
     position: absolute;
@@ -126,23 +143,23 @@ a:active{
     height: 250px;
 }
 
-@media (max-width:600px){
-    .content{
-        padding: 1em;
+@media (min-width:900px){
+    th{
+        width: auto;
+        display: table-cell;
     }
     td{
-        display: block;
+        width: auto;
+        display: table-cell;
     }
     td:nth-of-type(1){
-        font-size: 1.5em;
-        font-weight: bold;
-        color: #642B73;
+        font-size: 1em;
     }
-    th{
-        display: none;
-        width: 100%;
-        
+    .content{
+        padding: 1.8em;
+        overflow: none;
     }
+    
 }
 
 @media (min-height:550px){
