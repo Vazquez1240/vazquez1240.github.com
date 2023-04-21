@@ -1,0 +1,179 @@
+body{ 
+    margin: 0;
+}
+
+/* Empieza del menu */
+#menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+}
+  
+.menu-item {
+    padding-left: 35px;
+    height: 100%;
+    font-weight: bolder;
+}
+
+.correo{
+    color: yellow;
+}
+
+  
+.left {
+    width: 50%;
+    text-align: center;
+    background-color: #9f7fe4;
+}
+.left p{
+    font-size: 20px;
+    color: rgb(42, 38, 38);
+}
+  
+.right {
+    text-align: center;
+    width: 50%;
+    background-color: #533593;
+}
+  
+
+
+
+/* Acaba el menu */
+
+.datos{
+    
+    border-left: 1px solid rgb(225, 225, 225);
+    padding-left: 50px;
+    background: rgb(247, 247, 247);
+    width: 50%;
+}
+
+.descripcion{
+    display: inline-block;
+    width: 400px;
+    font-weight: 200;
+}
+
+.contenedor{
+    width: 100%;
+    height: 100%;
+    display: inline-flex; 
+    margin-right: auto; 
+    margin-left:auto;
+}
+
+
+.image{
+    background-color: white;
+    width: 50%;
+    padding-left: 50px;
+    margin-top: 10px;
+    height: 100%;
+}
+img{
+    margin-top: 30px;
+}
+
+
+.image h3{
+    text-transform: uppercase;
+    color: black;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+}
+.ocupacion{
+    margin-top: -13px;
+    color: rgb(171, 181, 191);
+}
+
+.dato{
+    color: #707fe3;
+    font-weight: bold;
+}
+
+img{
+    border-radius: 15px;
+    margin-left: 15px;
+}
+
+
+
+.git{
+    font-size: 25px;
+    display: inline-block;
+}
+.linkedln{
+    font-size: 25px;
+    display: inline-flex;
+    margin-left: 15px;
+    
+}
+
+.twitter{
+    font-size: 25px;
+    display: inline-flex;
+    margin-left: 15px;
+    
+}
+.instagram{
+    font-size: 25px;
+    display: inline-flex;
+    margin-left: 15px;
+    
+}
+.email{
+    font-size: 25px;
+    display: inline-flex;
+    margin-left: 15px;
+    
+}
+
+.me h2{
+    color: black;
+    font-size: 30px;
+}
+
+.skills{
+    border-top: 1px solid;
+}
+
+
+.skills p i{
+    padding: 3px;
+}
+.skills p .primer-star{
+    margin-left: 15px;
+}
+
+.barra{
+    width: 70px;
+    height: 13px;
+    border-radius: 10px;
+    margin-top: 50px;
+    background: #4a5497;
+}
+.estrella{
+    cursor: pointer;
+    color: #ffc400;
+}
+.vacia{
+    color: #a4a4a4;
+}
+
+.cvs{
+    border-radius: 10px;
+    height: 35px;
+    width: 120px;
+    float: right;
+    background: #b593ff;
+    margin-right: 25px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.cvs:hover{
+    background-color: black;
+    color: white;
+}
+

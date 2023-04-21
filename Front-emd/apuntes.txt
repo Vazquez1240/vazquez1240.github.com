@@ -1,0 +1,158 @@
+<div style="margin-top: 70px;">
+				<h3 style="font-size: 36px;font-weight: 700">Experiencia profesional</h3>
+				<div>
+					<dl>
+						<dt style="font-size: 22px; text-transform: uppercase;margin-bottom: 12px;margin-top: 36px">Software Developer Engineer</dt>
+						<dd>2022-2025 Universidad Davinci</dd>
+						<dt style="font-size: 22px; text-transform: uppercase;margin-bottom: 12px;margin-top: 36px">Especialista Python</dt>
+						<dd>2021-2022 TokioSchool</dd>
+						<dt style="font-size: 22px; text-transform: uppercase;margin-bottom: 12px;margin-top: 36px">Oracle One Next Education</dt>
+						<dd>2021-2022 Oracle One Next Educaction</dd>
+					</dl>
+				</div>
+			</div>
+			<div style="margin-top: 70px;">
+				<h3 style="font-size: 36px;font-weight: 700">Otros</h3>
+				<ul style="margin-top: 12px;padding: 0">
+					<li style="margin-top: 16px;">otro</li>
+					<li style="margin-top: 16px;">otro</li>
+					<li style="margin-top: 16px;">otro</li>
+					<li style="margin-top: 16px;">otro</li>
+					<li style="margin-top: 16px;">otro</li>
+				</ul>
+			</div>
+			<div style="margin-top: 70px;">
+				<h3 style="font-size: 36px;font-weight: 700">Sociales</h3>
+				<ul style="margin-top: 12px;padding: 0">
+					<li style="margin-top: 16px;">
+						<a href="https://github.com/Vazquez1240"target="_blank">Github</a>
+					</li>
+					<li style="margin-top: 16px;">
+						<a href="https://github.com/Vazquez1240" target="_blank">Github</a>
+					</li>
+
+				</ul>
+			</div>
+
+            <div class="education">
+				<h3>Educacion</h3>
+				<div>
+					<dl>
+						<dt>Software Developer Engineer</dt>
+						<dd>2022-2025 Universidad Davinci</dd>
+						<dt>Especialista Python</dt>
+						<dd>2021-2022 TokioSchool</dd>
+						<dt>Oracle One Next Education</dt>
+						<dd>2021-2022 Oracle One Next Educaction</dd>
+					</dl>
+				</div>
+			</div>
+
+            .education{
+    border-radius: 10px;
+    padding: 5px;
+    width: 60%;
+    background-color: #8d9aee; 
+    vertical-align: top
+}
+
+.education h3{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700
+}
+
+.education dt{
+    font-size: 22px; 
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    margin-top: 36px;
+}
+.education dd{
+    font-size: 22px; 
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    margin-top: 36px;
+}
+
+var insta = document.getElementById('insta');
+
+
+insta.onmouseover = function(){
+    insta.classList.remove('fa-bounce');
+}
+
+insta.onmouseout = function(){
+    insta.classList.add('fa-bounce');
+}
+
+var git = document.getElementById('github');
+
+
+git.onmouseover = function(){
+    git.classList.remove('fa-bounce');
+}
+
+git.onmouseout = function(){
+    git.classList.add('fa-bounce');
+}
+
+var twitter = document.getElementById('twit');
+
+
+twitter.onmouseover = function(){
+    twitter.classList.remove('fa-bounce');
+}
+
+twitter.onmouseout = function(){
+    twitter.classList.add('fa-bounce');
+}
+
+var link = document.getElementById('link');
+
+
+link.onmouseover = function(){
+    link.classList.remove('fa-bounce');
+}
+
+link.onmouseout = function(){
+    link.classList.add('fa-bounce');
+}
+
+<header>
+	<p class="descripcion">Desarollador Back-End Python</p>
+</header>
+
+
+<header class="header-uno">
+	<p class="descripcion">Desarollador Back-End Python</p>
+</header>
+
+<header class="header-dos">
+	<p class="descripcion">Desarollador Back-End Python</p>
+</header>
+
+
+.header-uno{
+    background-color: rgb(113, 71, 219);
+    color: white;
+    text-align: center;
+    padding: 16px;
+    width: 47%;
+}
+.header-dos{
+    background-color: #2e1356;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    width: 96%;
+    margin-top: -83px;
+}
+
+
+.header-uno .telefono{
+    height: 67px;
+    float: left;
+    font-size: 15px;
+    
+}
