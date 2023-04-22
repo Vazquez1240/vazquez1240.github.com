@@ -20,3 +20,12 @@ function copiarTexto() {
 
     alert("Correo Copiado");
   }
+
+function cambiarFondo(color,colorP){
+  var div = document.getElementById("imagen");
+  var elementosP = div.getElementsByTagName('p');
+  div.style.backgroundColor = color;
+  for(var i = 0; i < elementosP.length; i++) {
+    elementosP[i].style.color = colorP;
+  }
+}

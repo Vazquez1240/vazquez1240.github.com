@@ -1,4 +1,4 @@
-let links = document.querySelectorAll(".close");
+/*let links = document.querySelectorAll(".close");
 
 
 links.forEach(function(link){
@@ -22,4 +22,4 @@ links.forEach(function(link){
         
         
     })
-})
+})*/
