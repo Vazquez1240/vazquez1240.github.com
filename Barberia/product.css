@@ -260,4 +260,11 @@ td, th{
     .diferenciales ul, .diferenciales img{
         width: 100%;
     }
+    form{
+        justify-content: center;
+        margin-left: 50px;
+    }
+    form #name #correo #telefono{
+        width: 100%;
+    }
 }
