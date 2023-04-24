@@ -246,7 +246,7 @@ td, th{
     nav{
         position: static;
     }
-    .caja, .principal p  , .mapa div, .diferenciales div, .video{
+    .caja, .principal p, .mapa div, .diferenciales div, .video{
         width: auto;
     }
     .caja li{
@@ -267,7 +267,12 @@ td, th{
         justify-content: center;
         margin-left: 50px;
     }
+    .productos{
+        border: 1px solid black;
+        width: auto;
+    }
     .productos li{
+        width: auto;
         display: block;
     }
 }
