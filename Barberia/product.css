@@ -249,6 +249,9 @@ td, th{
     .caja, .principal p  , .mapa div, .diferenciales div, .video{
         width: auto;
     }
+    .caja li{
+        padding: 0 0 5px;
+    }
     .principal p{
         margin: 0 0 1em;
     }
