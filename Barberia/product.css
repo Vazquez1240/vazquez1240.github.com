@@ -239,7 +239,7 @@ td, th{
     margin: 1em auto;
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:450px){
     h1{
         text-align: center;
     }
@@ -264,7 +264,7 @@ td, th{
         justify-content: center;
         margin-left: 50px;
     }
-    form #name #correo #telefono{
-        width: 100%;
+    .productos li{
+        display: block;
     }
 }
