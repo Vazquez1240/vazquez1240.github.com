@@ -231,3 +231,65 @@ img{
     color: white;
     transform: scale(1.1);
 }
+
+@media screen and (max-width:450px){
+    section{
+        width: 100%;
+        height: 100%;
+    }
+    .contenedor{
+        position: absolute;
+        width: 90%;
+        display: block;
+    }
+    .image{
+        width: 90%;
+    }
+    .image img{
+        margin: 0 auto;
+        margin-left: -35px;
+        width: 90px;
+        height: 160px;
+        float: left;
+        margin-right: 10px;        
+    }
+    .image h3{
+        margin-top: 6px;
+        display: inline;
+        
+    }
+    .skills{
+        border: none;
+    }
+    .ocupacion{
+        margin-top: 12px;
+    }
+    .image p{
+        display: block;
+        font-size: 16px;
+    }
+    .redes{
+        float: left;
+        margin-left: -10px;
+        width: 250px;
+    }
+    .redes p{
+        font-size: 20px;
+    }
+    .me{
+        float: left;
+    }
+    .datos{
+        border: none;
+        width: auto;
+        margin-left: -49px;
+        margin-top: 20px;
+    }
+    .laboral{
+        display: block;
+    }
+    .estudios{
+        margin-top: 190px;
+        position: absolute;
+    }
+}

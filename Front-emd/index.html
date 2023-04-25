@@ -3,6 +3,7 @@
 <head>
 	<title>CV de Martin De La Torre Vazquez</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="./font-awesome/css/all.min.css">
 	<link rel="stylesheet" href="./font-awesome/css/fontawesome.min.css">
 	<link rel="stylesheet" href="main.css">
@@ -13,93 +14,97 @@
 </head>
 <body>	  
 	<section>
-		<div id="menu-container">
-			<div class="menu-item left">
-				
+		<header>
+			<div id="menu-container">
+				<div class="menu-item left"></div>
+				<div class="menu-item right">
+					<input class="cvs" type="button" value="Descargar Cv" onclick="window.location.href='./src/cv.pdf'" download>
+				</div>
 			</div>
-			<div class="menu-item right">
-				<input class="cvs" type="button" value="Descargar Cv" onclick="window.location.href='./src/cv.pdf'" download>
-			</div>
-		</div>
-		<div class="contenedor">
-			<div class="image" id="imagen">
-				<img src="img/cv.jpg" width="190">
+		</header>
+		<main>
+			<div class="contenedor">
+				<div class="image" id="imagen">
+					<img src="img/cv.jpg" width="190">
 
-				<h3>Martin De La Torre Vazquez</h3>
-				<p class="ocupacion">Desarollador Python</p>
-				<p><span class="dato">Nacido:</span> Septiembre 14, 2004</p>
-				<p><span class="dato">Email:</span> delatorremartin1240@gmail.com</p>
-				<div class="git">
-					<p><a href="https://github.com/Vazquez1240"target="_blank"><i id="github" class="fa-brands fa-github fa-bounce fa-lg" style="color: #000000;"></i></a></p>
-				</div>
-				<div class="linkedln">
-					<p><a href="https://www.linkedin.com/in/martin-de-la-torre-vazquez-a24549224/"target="_blank"><i id="link" class="fa-brands fa-linkedin fa-bounce fa-lg" style="color: #6c8fcb;"></i></a></p>
-				</div>
-				<div class="twitter">
-					<p><a href="https://twitter.com/Martin1240_"target="_blank"><i id="twit" class="fa-brands fa-square-twitter fa-bounce fa-lg" style="color: #80aeff;"></i></a></p>
-				</div>
-				<div class="instagram">
-					<p><a href="https://www.instagram.com/delatorremartin1240/"target="_blank"><i id="insta" class="fa-brands fa-instagram fa-bounce fa-lg" style="color: #d902ab;"></i></a></p>
-				</div>
-				<div class="email">
-					<p><a href="#" onclick="copiarTexto()"><i class="fa-regular fa-envelope fa-bounce fa-lg" style="color: #5485d9;"></i></i></a></p>
-					<p style="display:none;" id="texto-a-copiar">vazquezmartin1240@gmail.com</p>
-				</div>
-
-				<div class="me">
-					<h2>Sobre Mi</h2>
-					<p>Estudiante En ingenieria de software, especialista en python para el back-end y el analisis de datos,
-					   Responsable y con muchas ganas por aprender cosas nuevas, social, me se adaptar facilmente a nuevas areas y nuevos retos.
-					</p>
-					<div class="skills">
-						<h3>Habilidades</h3>
-						<p>Python:<i class="fa-solid fa-star estrella primer-star"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star estrella"></i></p>
-						<p>JavaScript:<i class="fa-solid fa-star estrella primer-star"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star vacia"></i><i class="fa-solid fa-star vacia"></i></p>
-						<p>Typescript:<i class="fa-solid fa-star estrella primer-star"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star vacia"></i><i class="fa-solid fa-star vacia"></i></p>
-						<p>Html:<i class="fa-solid fa-star estrella primer-star"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star vacia"></i></p>
-						<p>Css:<i class="fa-solid fa-star estrella primer-star"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star vacia"></i></p>
-						<p>Git:<i class="fa-solid fa-star estrella primer-star"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star vacia"></i></p>
-						<p>React:<i class="fa-solid fa-star estrella primer-star"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star vacia"></i><i class="fa-solid fa-star vacia"></i><i class="fa-solid fa-star vacia"></i></p>
+					<h3>Martin De La Torre Vazquez</h3>
+					<p class="ocupacion">Desarollador Python</p>
+					<p class="date"><span class="dato">Nacido:</span> Septiembre 14, 2004</p>
+					<p class="date"><span class="dato">Telefono:</span>4811232663</p>
+					<div class="redes">
+						<div class="git">
+							<p><a href="https://github.com/Vazquez1240"target="_blank"><i id="github" class="fa-brands fa-github fa-bounce fa-lg" style="color: #000000;"></i></a></p>
+						</div>
+						<div class="linkedln">
+							<p><a href="https://www.linkedin.com/in/martin-de-la-torre-vazquez-a24549224/"target="_blank"><i id="link" class="fa-brands fa-linkedin fa-bounce fa-lg" style="color: #6c8fcb;"></i></a></p>
+						</div>
+						<div class="twitter">
+							<p><a href="https://twitter.com/Martin1240_"target="_blank"><i id="twit" class="fa-brands fa-square-twitter fa-bounce fa-lg" style="color: #80aeff;"></i></a></p>
+						</div>
+						<div class="instagram">
+							<p><a href="https://www.instagram.com/delatorremartin1240/"target="_blank"><i id="insta" class="fa-brands fa-instagram fa-bounce fa-lg" style="color: #d902ab;"></i></a></p>
+						</div>
+						<div class="email">
+							<p><a href="#" onclick="copiarTexto()"><i class="fa-regular fa-envelope fa-bounce fa-lg" style="color: #5485d9;"></i></i></a></p>
+							<p style="display:none;" id="texto-a-copiar">vazquezmartin1240@gmail.com</p>
+						</div>
+					</div>
+					<div class="me">
+						<h2>Sobre Mi</h2>
+						<p>Estudiante En ingenieria de software, especialista en python para el back-end y el analisis de datos,
+						Responsable y con muchas ganas por aprender cosas nuevas, social, me se adaptar facilmente a nuevas areas y nuevos retos.
+						</p>
+						<div class="skills">
+							<h3>Habilidades</h3>
+							<p>Python:<i class="fa-solid fa-star estrella primer-star"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star estrella"></i></p>
+							<p>JavaScript:<i class="fa-solid fa-star estrella primer-star"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star vacia"></i><i class="fa-solid fa-star vacia"></i></p>
+							<p>Typescript:<i class="fa-solid fa-star estrella primer-star"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star vacia"></i><i class="fa-solid fa-star vacia"></i></p>
+							<p>Html:<i class="fa-solid fa-star estrella primer-star"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star vacia"></i></p>
+							<p>Css:<i class="fa-solid fa-star estrella primer-star"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star vacia"></i></p>
+							<p>Git:<i class="fa-solid fa-star estrella primer-star"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star vacia"></i></p>
+							<p>React:<i class="fa-solid fa-star estrella primer-star"></i><i class="fa-solid fa-star estrella"></i><i class="fa-solid fa-star vacia"></i><i class="fa-solid fa-star vacia"></i><i class="fa-solid fa-star vacia"></i></p>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<!--Experiencia sobre empleos-->
-			<div class="datos">
-				<div class="laboral">
-					<div class="barra"></div>
-					<h2>Experiencia Laboral</h2>
-					<p class="año">2022</p>
-					<p class="instituto">USAER No.20</p>
-					<p class="materia">Practicas profesionales, donde las realice en la USAER 20, donde mi funcion fue la creacion de un programa para la administracion de los estudiantes y mantenimiento.</p>
+				<!--Experiencia sobre empleos-->
+				<div class="datos">
+					<div class="laboral">
+						<div class="barra"></div>
+						<h2>Experiencia Laboral</h2>
+						<p class="año">2022</p>
+						<p class="instituto">USAER No.20</p>
+						<p class="materia">Practicas profesionales, donde las realice en la USAER 20, donde mi funcion fue la creacion de un programa para la administracion de los estudiantes y mantenimiento.</p>
+					</div>
+					<div class="estudios">
+						<div class="barra2"></div>
+						<h2>Educacion</h2>
+						<br>
+						<p class="año">2019 - 2022</p>
+						<p class="instituto">Centro de Bachillerato Tecnológico Industrial y de Servicios No.46</p>
+
+						<p class="materia">Titulo en Tecnico en programacion</p>
+						<br>
+						<p class="año">2021 - 2022</p>
+						<p class="instituto">Tokio School</p>
+						<p class="materia">Especialista en python</p>
+						<br>
+
+						<p class="año">2022 - 2025</p>
+						<p>En curso</p>
+						<p class="instituto">Universidad Davinci</p>
+						<p class="materia">Ingenieria en software</p>
+
+						<br>
+						<p class="año">2023 - 2023</p>
+						<p>En curso</p>
+						<p class="instituto">Programa One Next Education</p>
+						<p class="materia">Desarollo Fullstack</p>
+
+					</div>		
 				</div>
-				<div class="estudios">
-					<div class="barra2"></div>
-					<h2>Educacion</h2>
-					<br>
-					<p class="año">2019 - 2022</p>
-					<p class="instituto">Centro de Bachillerato Tecnológico Industrial y de Servicios No.46</p>
-
-					<p class="materia">Titulo en Tecnico en programacion</p>
-					<br>
-					<p class="año">2021 - 2022</p>
-					<p class="instituto">Tokio School</p>
-					<p class="materia">Especialista en python</p>
-					<br>
-
-					<p class="año">2022 - 2025</p>
-					<p>En curso</p>
-					<p class="instituto">Universidad Davinci</p>
-					<p class="materia">Ingenieria en software</p>
-
-					<br>
-					<p class="año">2023 - 2023</p>
-					<p>En curso</p>
-					<p class="instituto">Programa One Next Education</p>
-					<p class="materia">Desarollo Fullstack</p>
-
-				</div>		
 			</div>
+		</main>
 	</section>
 
 	<script src="./app.js"></script>
