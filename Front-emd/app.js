@@ -11,8 +11,10 @@ function copiarTexto() {
   
     // Seleccionar el texto del elemento temporal
     elementoTemporal.select();
-  
-  
+
+    document.execCommand('copy');
+
+    
     // Remover el elemento temporal del documento
     document.body.removeChild(elementoTemporal);
 
