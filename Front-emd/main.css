@@ -1,5 +1,6 @@
 body{ 
     margin: 0;
+    padding: 0;
 }
 
 /* Empieza del menu */
@@ -34,7 +35,8 @@ body{
 .right {
     text-align: center;
     width: 50%;
-    background-color: #533593;
+    background-color: #714bc4;
+    font-family: 'Montserrat', sans-serif;
 }
   
 
@@ -42,14 +44,65 @@ body{
 
 /* Acaba el menu */
 
-.datos{
-    
-    border-left: 1px solid rgb(225, 225, 225);
-    padding-left: 50px;
-    background: rgb(247, 247, 247);
-    width: 50%;
+.barra{
+    width: 70px;
+    height: 13px;
+    border-radius: 10px;
+    display: inline-block;
+    background: #4a5497;
+}
+.barra2{
+    width: 70px;
+    margin-top: 10px;
+    height: 14px;
+    border-radius: 10px;
+    display: inline-block;
+    background: #4a5497;
 }
 
+
+.datos{
+    border: 1px solid;
+    border-left: 1px solid rgb(225, 225, 225);
+    padding-left: 50px;
+    display: inline-flex;
+    background: rgb(247, 247, 247);
+    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+}
+.datos .laboral{
+    margin: 25px 55px;
+    display: block;
+    position: absolute;
+    justify-content: center;
+}
+
+
+.datos .estudios{
+    display: block;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 55px;
+    
+}
+
+.año{
+    font-size: 25px;
+    font-weight: bold;
+}
+.instituto{
+    color: rgb(158, 159, 159);
+    font-size: 20px;
+    margin-top: -20px;
+}
+.materia{
+    font-size: 25px;
+}
+.laboral p, .estudios p{
+    width: auto;
+    display: block;
+    margin-top: -10px;
+}
 .descripcion{
     display: inline-block;
     width: 400px;
@@ -82,6 +135,7 @@ img{
     color: black;
     font-size: 18px;
     font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 .ocupacion{
     margin-top: -13px;
@@ -132,9 +186,14 @@ img{
 
 .me h2{
     color: black;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 30px;
 }
 
+.me p{
+    font-size: 20px;
+}
 .skills{
     border-top: 1px solid;
 }
@@ -147,13 +206,7 @@ img{
     margin-left: 15px;
 }
 
-.barra{
-    width: 70px;
-    height: 13px;
-    border-radius: 10px;
-    margin-top: 50px;
-    background: #4a5497;
-}
+
 .estrella{
     cursor: pointer;
     color: #ffc400;
@@ -167,13 +220,14 @@ img{
     height: 35px;
     width: 120px;
     float: right;
-    background: #b593ff;
+    background: #ab8ded;
     margin-right: 25px;
     margin-top: 15px;
     cursor: pointer;
+    transition: 1s all;
 }
 .cvs:hover{
-    background-color: black;
+    background-color: #b59bee;
     color: white;
+    transform: scale(1.1);
 }
-
