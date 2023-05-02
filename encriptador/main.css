@@ -172,13 +172,14 @@ header div{
     }
     .caja .caja-texto{
         display: block;
+        width: auto;
         margin: 0 0 0 -100px;
     }
     .caja .caja-texto textarea{
         display: block;
         height: auto;
         font-size: 16px;
-        width: 150px;
+        width: 98%;
     }
     .caja .caja-texto p{
         font-size: 13px;
