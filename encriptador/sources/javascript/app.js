@@ -233,6 +233,14 @@ function encriptarTexto() {
   // Alerta para saber que se copio el texto
     alert("Texto copiado correctamente")
   }
+
+  function actualizarPantalla(){
+    window.addEventListener('resize', function() {
+      // actualizar el código cuando cambia el tamaño de la pantalla
+      textarea.removeEventListener('input', null); // eliminar el evento anterior
+      seguirTextArea('cifrarTexto'); // agregar el evento actualizado
+    });
+  }
   
   // Botones para  encriptar y desencriptar.
   
@@ -246,4 +254,5 @@ function encriptarTexto() {
   btn3.onclick = copiarTexto;
 
 
+//actualizarPantalla()
 seguirTextArea('cifrarTexto');
