@@ -156,7 +156,7 @@ header div{
     margin-top: 15px;
 }
 
-@media screen and (max-width:490px){
+@media screen and (min-width:69px) and (max-width:739px){
     header{
         width: 100%;
     }
@@ -191,7 +191,7 @@ header div{
     #encriptarTexto{
         position: absolute;
         width: 90%;
-        margin: 180px  15px 0 -130px;
+        margin: 180px  15px 0 -120px;
         padding-right: 150px;
         height: auto;
     }
@@ -206,7 +206,7 @@ header div{
     
     .botones{
         float: left;
-        margin-left: -130px;
+        margin-left: -120px;
         position: static;
         display: block;
         width: 170%;
@@ -222,8 +222,8 @@ header div{
     }
     #areams{
         position: absolute;
-        width: 90%;
-        margin: 180px  15px 0 -130px;
+        width: 990%;
+        margin: 180px  15px 0 -120px;
         padding-right: 150px;
         height: auto;
         
@@ -234,5 +234,63 @@ header div{
     }
     .mensaje-oculto .btn-copiar{
         margin-left: 100px;
+    }
+}
+
+
+@media screen and (min-width:740px) and  (max-width:1000px){
+    main{
+        width: auto;
+    }
+    .caja .caja-texto{
+        display: block;
+        margin: 25px 0 0 50px;
+    }
+    .caja .caja-texto p{
+        font-size: 18px;
+        width: 100%;
+        margin-left: 15px;
+    }
+    .botones{
+        float: left;
+        position: static;
+        display: block;
+        margin-left: 50px;
+        width: 90%;
+    }
+    #encriptarTexto img{
+        display: none;
+    }
+    #encriptarTexto{
+        position: absolute;
+        margin-top: 100px;
+        width: 80%;
+        margin-left: 70px;
+        height: auto;
+    }
+    #areams{
+        position: absolute;
+        margin-top: 100px;
+        width: 85%;
+        margin-left: 70px;
+        height: auto;
+    }
+    #areams textarea{
+        width: 93%;
+        height: 80%;
+    }
+}
+@media screen and (min-width:1001px) and (max-width:1440px) {
+    main{
+        width: auto;
+        height: auto;
+    }
+    .caja .caja-texto{
+        display: inline-block;
+        margin: 25px 0 0 50px;
+    }
+    .caja #imagen{
+        width: 80%;
+        margin-top: 50px;
     }
 }

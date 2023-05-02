@@ -1,38 +1,62 @@
 function seguirTextArea(idTextArea) {
     var textarea = document.getElementById(idTextArea);
     if (window.matchMedia("(max-width: 490px)").matches) {
-      textarea.addEventListener('input', function() {
-        if(textarea.value.length === 0){
-          document.getElementById("imagen").style.display = "none",
-          document.getElementById("encriptarTexto").style.display = "block",
-          document.getElementById("msj-entrada").style.display = "block",
-          document.getElementById("descripcion").style.display = "block",
-          document.getElementById("areams").style.display = "none",
-          document.getElementById("encriptadoTxt").value = "";
-          console.log("Hola soy el 490px");
-      }
-    })
-    }else if (window.matchMedia("(max-width: 1424px)").matches) {
-      var textarea = document.getElementById(idTextArea);
-      textarea.addEventListener('input', function() {
-        if(textarea.value.length === 0){
-            document.getElementById("imagen").style.display = "block",
+        textarea.addEventListener('input', function() {
+          if(textarea.value.length === 0){
+            document.getElementById("imagen").style.display = "none",
             document.getElementById("encriptarTexto").style.display = "block",
             document.getElementById("msj-entrada").style.display = "block",
             document.getElementById("descripcion").style.display = "block",
             document.getElementById("areams").style.display = "none",
             document.getElementById("encriptadoTxt").value = "";
-            console.log("Hola soy 1024px");
+            console.log("Hola soy el 490px");
         }
       });
-    };
-    window.addEventListener('resize', function() {
-      // actualizar el código cuando cambia el tamaño de la pantalla
-      textarea.removeEventListener('input', null); // eliminar el evento anterior
-      seguirTextArea('cifrarTexto');
-    });
-  }
-  
+    }else if (window.matchMedia("(min-width: 1001px) and (max-width:1440px)").matches) {
+        var textarea = document.getElementById('cifrarTexto');
+        console.log(textarea);
+        textarea.addEventListener('input', function() {
+          if(textarea.value.length === 0){
+              document.getElementById("imagen").style.display = "block",
+              document.getElementById("encriptarTexto").style.display = "block",
+              document.getElementById("msj-entrada").style.display = "block",
+              document.getElementById("descripcion").style.display = "block",
+              document.getElementById("areams").style.display = "none",
+              document.getElementById("encriptadoTxt").value = "";
+              console.log("Hola soy 1024px");
+          }
+        });
+    }else if (window.matchMedia("(min-width:740px) and (max-width: 1000px)").matches){
+      var textarea = document.getElementById(idTextArea);
+      console.log(textarea);
+      textarea.addEventListener('input',function(){
+        if(textarea.value.length === 0){
+            document.getElementById("imagen").style.display = "none",
+            document.getElementById("encriptarTexto").style.display = "block",
+            document.getElementById("msj-entrada").style.display = "block",
+            document.getElementById("descripcion").style.display = "block",
+            document.getElementById("areams").style.display = "none",
+            document.getElementById("encriptadoTxt").value = "";
+            console.log("Hola soy 980px");
+        }
+      })
+    }else{
+      var textarea = document.getElementById(idTextArea);
+      console.log(textarea);
+      textarea.addEventListener('input',function(){
+        if(textarea.value.length === 0){
+          document.getElementById("imagen").style.display = "block",
+          document.getElementById("encriptarTexto").style.display = "block",
+          document.getElementById("msj-entrada").style.display = "block",
+          document.getElementById("descripcion").style.display = "block",
+          document.getElementById("areams").style.display = "none",
+          document.getElementById("encriptadoTxt").value = "";
+          console.log("Hola soy 980px");
+        }
+      })
+    }
+}
+
 
 // Función para encriptar el texto ingresado.
 function encriptarTexto() {
