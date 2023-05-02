@@ -227,7 +227,7 @@ function encriptarTexto() {
   }
   
   function copiarTexto() {
-    var contenidoTxt = encriptadoTxt.value;
+    var contenidoTxt = document.getElementById("encriptadoTxt").value;
     navigator.clipboard.writeText(contenidoTxt);
   
   // Alerta para saber que se copio el texto
