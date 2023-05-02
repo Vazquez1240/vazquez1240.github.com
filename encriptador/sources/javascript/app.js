@@ -254,5 +254,5 @@ function encriptarTexto() {
   btn3.onclick = copiarTexto;
 
 
-//actualizarPantalla()
-seguirTextArea('cifrarTexto');
+actualizarPantalla();
+//seguirTextArea('cifrarTexto');
