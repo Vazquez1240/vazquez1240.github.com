@@ -1,0 +1,18 @@
+else{
+            document.getElementById("areams").style.display = "block";
+            document.getElementById("encriptarTexto").style.display = "none";
+            document.getElementById("imagen").style.display = "none";
+
+        
+            document.getElementById("btn-copiar").style.display = "show";
+            document.getElementById("btn-copiar").style.display = "inherit";
+            document.getElementById("areams").style.display = "block";
+        }
+#encriptarTexto h2{
+        padding-left: 025px;
+        padding-right: 85px;
+        font-size: 15px;
+    }
+    #encriptarTexto p{
+        font-size: 13px;
+    }
