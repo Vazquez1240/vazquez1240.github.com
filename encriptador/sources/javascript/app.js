@@ -1,6 +1,6 @@
 function seguirTextArea(idTextArea) {
     var textarea = document.getElementById(idTextArea);
-    if (window.matchMedia("(max-width: 490px)").matches) {
+    if (window.matchMedia("(min-width:69px) and (max-width: 490px)").matches) {
         textarea.addEventListener('input', function() {
           if(textarea.value.length === 0){
             document.getElementById("imagen").style.display = "none",
@@ -71,13 +71,66 @@ function encriptarTexto() {
   //Mostrar notificación si no se ingreso texto.
     if (texto === "") {
       alert("Ups, Parece que no ha ingresado un texto");
-      return(
-        document.getElementById("imagen").style.display = "block",
-        document.getElementById("encriptarTexto").style.display = "block",
-        document.getElementById("msj-entrada").style.display = "block",
-        document.getElementById("descripcion").style.display = "block",
-        document.getElementById("areams").style.display = "none"
-      );
+      var textarea = document.getElementById('cifrarTexto');
+      if (window.matchMedia("(min-width:69px) and (max-width: 490px)").matches) {
+        textarea.addEventListener('input', function() {
+          if(textarea.value.length === 0){
+            return(
+              document.getElementById("imagen").style.display = "none",
+              document.getElementById("encriptarTexto").style.display = "block",
+              document.getElementById("msj-entrada").style.display = "block",
+              document.getElementById("descripcion").style.display = "block",
+              document.getElementById("areams").style.display = "none",
+              document.getElementById("encriptadoTxt").value = "",
+              console.log("Hola soy telefono")
+            )
+        }
+      });
+    }else if (window.matchMedia("(min-width: 1001px) and (max-width:1440px)").matches) {
+        var textarea = document.getElementById('cifrarTexto');
+        console.log(textarea);
+        textarea.addEventListener('input', function() {
+          if(textarea.value.length === 0){
+             return(
+              document.getElementById("imagen").style.display = "block",
+              document.getElementById("encriptarTexto").style.display = "block",
+              document.getElementById("msj-entrada").style.display = "block",
+              document.getElementById("descripcion").style.display = "block",
+              document.getElementById("areams").style.display = "none",
+              document.getElementById("encriptadoTxt").value = "",
+              console.log("Hola soy 1024px")
+             )
+          }
+        });
+    }else if (window.matchMedia("(min-width:740px) and (max-width: 1000px)").matches){
+      var textarea = document.getElementById("cifrarTexto");
+      console.log("hola mundo");
+      console.log("Entro al return"),
+      document.getElementById("imagen").style.display = "block",
+      document.getElementById("encriptarTexto").style.display = "block",
+      document.getElementById("msj-entrada").style.display = "block",
+      document.getElementById("descripcion").style.display = "block",
+      document.getElementById("areams").style.display = "none",
+      document.getElementById("encriptadoTxt").value = "",
+      console.log("Hola soy laptop")
+    }else{
+      var textarea = document.getElementById("cifrarTexto");
+      console.log("gola");
+      console.log("laptop");
+      textarea.addEventListener('input',function(){
+        if(textarea.value.length === 0){
+          return(
+            document.getElementById("imagen").style.display = "block",
+            document.getElementById("encriptarTexto").style.display = "block",
+            document.getElementById("msj-entrada").style.display = "block",
+            document.getElementById("descripcion").style.display = "block",
+            document.getElementById("areams").style.display = "none",
+            document.getElementById("encriptadoTxt").value = "",
+            console.log("Hola soy laptop")
+          )
+        }
+      })
+    }
     }
   
     // Ocultar y mostrar algunos elementos del encriptador.
@@ -103,13 +156,61 @@ function encriptarTexto() {
     var cifrarTexto = cifrarTexto.replace(/ufat/gim, "u");
     if (texto === "") {
         alert("Ups, Parece que no ha ingresado un texto");
-        return(
-          document.getElementById("imagen").style.display = "block",
-          document.getElementById("encriptarTexto").style.display = "block",
-          document.getElementById("msj-entrada").style.display = "block",
-          document.getElementById("descripcion").style.display = "block",
-          document.getElementById("areams").style.display = "none"
-        );
+        if (window.matchMedia("(min-width:69px) and (max-width: 490px)").matches) {
+          textarea.addEventListener('input', function() {
+            if(textarea.value.length === 0){
+              document.getElementById("imagen").style.display = "none",
+              document.getElementById("encriptarTexto").style.display = "block",
+              document.getElementById("msj-entrada").style.display = "block",
+              document.getElementById("descripcion").style.display = "block",
+              document.getElementById("areams").style.display = "none",
+              document.getElementById("encriptadoTxt").value = "";
+              console.log("Hola soy el 490px");
+          }
+        });
+      }else if (window.matchMedia("(min-width: 1001px) and (max-width:1440px)").matches) {
+          var textarea = document.getElementById('cifrarTexto');
+          console.log(textarea);
+          textarea.addEventListener('input', function() {
+            if(textarea.value.length === 0){
+                document.getElementById("imagen").style.display = "block",
+                document.getElementById("encriptarTexto").style.display = "block",
+                document.getElementById("msj-entrada").style.display = "block",
+                document.getElementById("descripcion").style.display = "block",
+                document.getElementById("areams").style.display = "none",
+                document.getElementById("encriptadoTxt").value = "";
+                console.log("Hola soy 1024px");
+            }
+          });
+      }else if (window.matchMedia("(min-width:740px) and (max-width: 1000px)").matches){
+        var textarea = document.getElementById("cifrarTexto");
+        console.log(textarea);
+        textarea.addEventListener('input',function(){
+          if(textarea.value.length === 0){
+              document.getElementById("imagen").style.display = "none",
+              document.getElementById("encriptarTexto").style.display = "block",
+              document.getElementById("msj-entrada").style.display = "block",
+              document.getElementById("descripcion").style.display = "block",
+              document.getElementById("areams").style.display = "none",
+              document.getElementById("encriptadoTxt").value = "";
+              console.log("Hola soy 980px");
+          }
+        })
+      }else{
+        var textarea = document.getElementById("cifrarTexto");
+        console.log(textarea);
+        textarea.addEventListener('input',function(){
+          if(textarea.value.length === 0){
+            document.getElementById("imagen").style.display = "block",
+            document.getElementById("encriptarTexto").style.display = "block",
+            document.getElementById("msj-entrada").style.display = "block",
+            document.getElementById("descripcion").style.display = "block",
+            document.getElementById("areams").style.display = "none",
+            document.getElementById("encriptadoTxt").value = "";
+            console.log("Hola soy 980px");
+          }
+        })
+      }
       }
 
     document.getElementById("imagen").style.display = "none";
