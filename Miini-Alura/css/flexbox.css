@@ -77,9 +77,12 @@
     .rodapePrincipal-contatoForm{
        width: 100%; 
     }
-    .rodapePrincipal-navMap-list{
-        align-items: initial;
+    .rodapePrincipal-patrocinadores-list{
+        align-items: center;
         width: 100%;
         margin: 0;
+    }
+    .rodapePrincipal-contatoForm-fieldset{
+        justify-content: center;
     }
 }
