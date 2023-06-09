@@ -50,11 +50,36 @@
 
 
 /* Responsive */
+@media screen and (min-width:69px) and (max-width:739px) {
+    .headerPrincipal .container{
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+    .headerPrincipal-nav{
+        flex-direction: column;
+    }
+    
+    .contenidoPrincipal-cursos{
+        flex-direction: column;
+    }
+    .contenidoPrincipal-cursos-link{
+        width: 100%;
+    }
+    .rodapePrincipal-navMap-list{
+        height: auto;
+        flex-wrap: nowrap;
+    }
 
-.headerPrincipal .container{
-    flex-direction: column;
-    align-items: initial;
-}
-.headerPrincipal-nav{
-    flex-direction: column;
+    .rodapePrincipal-patrocinadores .container{
+        flex-direction: column;
+    }
+    .rodapePrincipal-contatoForm{
+       width: 100%; 
+    }
+    .rodapePrincipal-navMap-list{
+        align-items: initial;
+        width: 100%;
+        margin: 0;
+    }
 }
