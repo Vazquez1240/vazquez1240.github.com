@@ -50,7 +50,7 @@
 
 
 /* Responsive */
-@media screen and (min-width:69px) and (max-width:739px) {
+@media screen and (min-width:54px) and (max-width:768px) {
     .headerPrincipal .container{
         flex-direction: column;
         align-items: initial;
