@@ -675,6 +675,7 @@ body{
     }
     .formulario{
         margin-left: 1rem;
+        width: 95%;
     }
     .formulario .title-formulario{
         margin: 0;
@@ -689,5 +690,17 @@ body{
     }
     .formulario .content-form{
         margin: 0;
+        width: 100%;
+    }
+
+    .content-form input{
+        width: 80%;
+    }
+    .content-form textarea{
+        width: 80%;
+    }
+
+    .pie-pagina{
+        display: none;
     }
 }
