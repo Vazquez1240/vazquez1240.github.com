@@ -1,0 +1,687 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: #F5F5F5;
+}
+
+/*                           CABECERA                           */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    margin-right: 3rem;
+    margin-left: 7rem;
+    height: 5rem;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo .vector{
+    width: 1.25rem;
+}
+.estrellas{
+    display: flex;
+    flex-direction: column;
+}
+.estrella{
+    margin-top: .80rem;
+    padding-bottom: .50rem;
+}
+
+.nombre{
+    font-family: 'Monserrat', sans-serif;
+    margin-left: .25rem;
+    margin-top: 2px;
+}
+.nombre-secundario{
+    display: none;
+}
+
+.list-menu{
+    display: flex;
+    margin-left: 5rem;
+}
+.list-menu li{
+    margin-right: 3rem;
+    list-style: none;
+}
+
+.list-menu li a{
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #464646;
+}
+
+.list-menu li a:hover{
+    color:  #8d7a00;	
+}
+
+
+/* ================================================================= */
+
+/*                         PRESENTACION                              */
+
+.presentacion{
+    display: flex;
+    width: 90rem;
+    margin-top: 8rem;
+    margin-left: 10rem;
+    width: auto;
+    margin-right: 10rem;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+.content h2{
+    width: 751px;
+    height: 122px;
+    font-family: 'PT sans', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 55px;
+    line-height: 61px;
+    margin-bottom: 4.25rem;
+    color: #464646;
+}
+
+.content p{
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    font-family: 'PT sans', sans-serif;
+}
+
+.content img{
+    width: 308px;
+    height: 300px;
+    border-radius: 100%;
+    margin-top: -1rem;
+    margin-left: 1.60rem;
+}
+.redes{
+    display: flex;
+    width: 100%;
+    margin-left: 7rem;
+    width: auto;
+    margin-top: 1rem;
+    margin-right: 10rem;
+}
+.card-redes{
+    display: flex;
+    flex-direction: row;
+    margin-left: 3rem;
+}
+.card-redes a{
+    text-decoration: none;
+    color: #373737;
+}
+/* ================================================================= */
+
+/*                             SOBRE MI                              */
+.sobre-mi{
+    margin-top: 2rem;
+    height: 314px;
+    background: #EAF2FD;
+}
+
+
+.div-info{
+    padding-top: .90rem;
+    margin-left: 10rem;
+    text-align: justify;
+    width: 751px;
+}
+
+.title{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #464646;
+}
+
+.info{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+}
+
+/* =================================================================*/
+/*                       SKILLLS Y HOBBIES                          */
+.skills{
+    width: 100%;
+    margin-top: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+.cards{
+    width: 100%;
+    display: flex;
+
+}
+.title-skills{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.title-skills h2{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 34px;
+    font-weight: 200;
+}
+.card{
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    width: 10%;
+    border: 1px solid black;
+    margin-left: 6%;
+    height: 174px;
+    background: #FFFFFF;
+}
+.card img{
+    margin-top: 2rem;
+    width: 65px;
+    height: 55px;
+}
+.card h2{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 50;
+}
+
+.card:hover{
+    cursor: pointer;
+    font-size: 1.2rem;
+    border:1.70px solid #373737;
+}
+.card:hover img{
+    transform: scale(1.1);
+}
+
+/* =================================================================*/
+/*                              HOBBIES                              */
+.hobbies{
+    width: 100%;
+    margin-top: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.4rem;
+}
+.title-hobbies{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.hobbies h2{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+}
+.title-hobbies h2{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 34px;
+    font-weight: 200;
+}
+
+/* =================================================================  */
+
+/*                              FORMACION                             */
+
+.formacion{
+    width: 100%;
+    height: auto;
+    background: #EAF2FD;
+    display: flex;
+    margin-bottom: 3rem;
+    flex-direction: column;
+}
+.title-formacion{
+    width: 100%;
+    text-align: center;
+}
+.title-formacion h2{
+    font-family: 'PT Sans', 'Moserrat', sans-serif, arial, helvetica;
+    font-size: 34px;
+    font-weight: 100;
+}
+.instituciones{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-img{
+    width: 20%;
+    margin-left: 5%;
+}
+
+.card-img img{
+    width: 90%;
+    height: 40%;
+}
+
+.card-img h2{
+    font-family: 'PT Sans', 'Moserrat', sans-serif, arial, helvetica;
+    font-size: 34px;
+    font-weight: 100;
+}
+.card-img p{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+/* ================================================================= */
+/*                         EXPERIENCIA                               */
+
+.experiencia{
+    width: 80%;
+    border: 1px solid black;
+    margin-left: 10rem;
+    margin-bottom: 5rem;
+    border-radius: 15px;
+    margin-right: 10rem;
+}
+.title-experiencia{
+    width: 100%;
+    text-align: center;
+}
+.title-experiencia h2{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 35px;
+    font-weight: 50;
+}
+
+.proyectos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.card-proyecto{
+    display: flex;
+    margin-top: 3rem;
+    margin-left: 6rem;
+    margin-bottom: 6rem;
+    flex-direction: row;
+    width: 100%;
+}
+.card-proyecto img{
+    width: 45%;
+}
+
+.description{
+    margin-left: 3rem;
+}
+.description h2{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+}
+.description p{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+.btns .demo{
+    margin-left: 1.25rem;
+    background: rgba(42, 122, 228, 1);
+}
+.btns .repositorio{
+    background: #F5F5F5;
+    border: 1px solid rgba(42, 122, 228, 1);
+}
+
+.btns button{
+    width: 116px;
+    height: 54px;
+    font-family: 'PT Sans', sans-serif;
+}
+.btns .demo{
+    border: 1px solid rgba(42, 122, 228, 1);
+    color: #F5F5F5;
+}
+
+.proyectos .card-proyecto:nth-child(2n){
+    flex-direction: row-reverse;
+    display: flex;
+    margin: 0;
+    margin-bottom: 6rem;
+}
+.proyectos .card-proyecto:nth-child(2n) .description{
+    margin-right: 3rem;
+}
+.proyectos .card-proyecto:nth-child(2n) .img-proyect{
+    margin-right: 6rem;
+}
+
+.btns .demo:hover{
+    cursor: pointer;
+    background-color: #686868;
+    border: 1px solid black;
+    color: #F5F5F5;
+}
+.btns .repositorio:hover{
+    cursor: pointer;
+    background-color: #686868;
+    border: 1px solid black;
+    color: #F5F5F5;
+}
+
+/* =================================================================   */
+
+/*                              FOOTER                                  */
+
+
+.pie-pagina{
+    width: 100%;
+    height: 4rem;
+    background: white;
+    color: black;
+    text-align: center;
+}
+
+.pie-pagina p{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 24px;
+    margin: 0;
+    font-weight: 50;
+}
+.caja-formulario{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin-left: 10rem;
+    margin-bottom: 1.50rem;
+    border-radius: 5px;
+    margin-right: 10rem;
+}
+.title-formulario{
+    margin-left: 10rem;
+}
+.formulario .title-formulario{
+    font-family: 'PT Sans', sans-serif;
+    text-align: justify;
+}
+.formulario .title-formulario h2{
+    font-weight: 100;
+    font-size: 30px;
+}
+.formulario .title-formulario p{
+    font-weight: 100;
+    font-size: 23px;
+}
+
+.formulario .content-form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.content-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-form label{
+    font-family: 'PT Sans',sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+    display: flex;
+}
+.content-form input{
+    width: 50%;
+    height: 2.8rem;
+    margin-bottom: .60rem;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 120;
+}
+.content-form textarea{
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 120;
+    margin-bottom: 2rem;
+}
+
+.btns-form{
+    width: 100%;
+    text-align:center;
+    margin-bottom: 2rem;
+}
+.btns-form button{
+    width: 10rem;
+    height: 3rem;
+    background-color:  rgba(42, 122, 228, 1);
+    color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(42, 122, 228, 1);
+}
+.btns-form button:hover{
+    cursor: pointer;
+    background-color: #464646;
+    border: 1px solid #464646;
+    transform: scale(1.1);
+    transition: 400ms;
+}
+
+
+/*---------------------------------------------------------------- */
+/*                          Medias Querys                          */
+
+@media screen and (max-width: 480px){
+    body{
+        width: 100%;
+    }
+    .header{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+    h2{
+        margin: 0;
+        padding: 0;
+    }
+    .logo{
+        width: auto;
+    }
+    .logo .nombre{
+        font-size: 15px;
+        width: 135px;
+        margin-right: .70rem;
+    }
+    .nombre #nombre-item{
+        display: none;
+    }
+    .nombre-secundario{
+        display: flex;
+    }
+    .list-menu{
+        margin: 0;
+        padding: 0;
+    }
+    .list-menu li:nth-child(-n+5){
+        display: none;
+    }
+
+    .list-menu .contacto a{
+        font-size: 14px;
+    }
+
+    .presentacion{
+        width: 100%;
+        margin: 0;
+        margin-left: .5rem;
+    }
+    .content{
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        margin: .40rem;
+    }
+    .descripcion{
+        display: flex;
+        flex-direction: column;
+        width: 94%;
+        padding: 0;
+        margin: 0;
+    }
+    .descripcion h2{
+        width: auto;
+        height: auto;
+        margin: 0;
+        font-family: sans-serif;
+        font-size: 23px;
+        margin-top: 7rem;
+        font-weight:750;
+        line-height: 2.4rem;
+    }
+    .descripcion p{
+        width: auto;
+        height: auto;
+        text-align: justify;
+    }
+    .content img{
+        position: absolute;
+        display: block;
+        width: 98px;
+        height: 98px;
+        margin: 0;
+    }
+    .redes{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .card-redes{
+        margin: 0;
+        margin-left: 1.2rem;
+    }
+    .sobre-mi{
+        width: 100%;
+    }
+    .div-info{
+        margin: 0;
+        width: 95%;
+        margin-left: .50rem;
+    }
+    .title{
+        font-size: 30px;
+        margin: 0;
+    }
+    .info{
+        font-size: 16px;
+        line-height: 1.2rem;
+    }
+
+    .cards{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card{
+        width: 90%;
+        margin-left: .5rem;
+        margin-bottom: 1.3rem
+    }
+
+    .formacion{
+        width: 100%;
+    }
+    .title-formacion{
+        font-size: 30px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .instituciones{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-img{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    
+    .experiencia{
+        border: none;
+        margin: 0;
+        width: 100%;
+    }
+    .proyectos{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .card-proyecto{
+        margin: 0;
+        display: flex;
+        margin-left: 1.5rem;
+        margin-bottom: 2rem;
+        flex-direction: column;
+    }
+    .card-proyecto img{
+        width: 90%;
+    }
+
+    .card-proyecto .description{
+        margin: 0;
+    }
+
+    .proyectos > .card-proyecto:nth-child(2n){
+        display: flex;
+        margin: 0;
+        margin-left: 1.5rem;
+        margin-bottom: 2rem;
+        flex-direction: column;
+        width: 100%;
+    }
+    .proyectos > .card-proyecto:nth-child(2n) .description{
+       margin: 0;
+    }
+    .proyectos > .card-proyecto:nth-child(2n) .img-proyect{
+        margin: 0;
+    }
+
+    .caja-formulario{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        border: none;
+    }
+    .formulario{
+        margin-left: 1rem;
+    }
+    .formulario .title-formulario{
+        margin: 0;
+        width: 100%;
+        text-align: justify;
+    }
+    .formulario .title-formulario h2{
+        font-size: 30px;
+    }    
+    .formulario .title-formulario p{
+        font-size: 20px;
+    }
+    .formulario .content-form{
+        margin: 0;
+    }
+}
