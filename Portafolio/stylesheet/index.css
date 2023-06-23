@@ -495,6 +495,7 @@ body{
         display: flex;
         flex-direction: row;
         margin: 0;
+        width: 50%;
     }
     h2{
         margin: 0;
@@ -517,6 +518,7 @@ body{
     .list-menu{
         margin: 0;
         padding: 0;
+        width: 14px;
     }
     .list-menu li:nth-child(-n+5){
         display: none;
@@ -524,10 +526,11 @@ body{
 
     .list-menu .contacto a{
         font-size: 14px;
+        width: auto;
     }
 
     .presentacion{
-        width: 100%;
+        width: 98%;
         margin: 0;
         margin-left: .5rem;
     }
@@ -573,7 +576,7 @@ body{
     }
     .card-redes{
         margin: 0;
-        margin-left: 1rem;
+        margin-left: .50rem;
     }
     .sobre-mi{
         width: 100%;
@@ -616,7 +619,7 @@ body{
         flex-direction: column;
     }
     .card-img{
-        width: 100%;
+        width: 90%;
         margin-bottom: 3rem;
     }
     
@@ -633,8 +636,9 @@ body{
     .card-proyecto{
         margin: 0;
         display: flex;
-        margin-left: 1.5rem;
+        margin-left: 1rem;
         margin-bottom: 2rem;
+        width: auto;
         flex-direction: column;
     }
     .card-proyecto img{
@@ -643,23 +647,25 @@ body{
 
     .card-proyecto .description{
         margin: 0;
+        width: auto;
     }
 
     .proyectos > .card-proyecto:nth-child(2n){
         display: flex;
         margin: 0;
-        margin-left: 1.5rem;
+        margin-left: 1rem;
         margin-bottom: 2rem;
         flex-direction: column;
-        width: 100%;
+        width: auto;
     }
     .proyectos > .card-proyecto:nth-child(2n) .description{
        margin: 0;
+       width: auto;
     }
     .proyectos > .card-proyecto:nth-child(2n) .img-proyect{
         margin: 0;
     }
-
+    
     .caja-formulario{
         display: flex;
         flex-direction: column;
