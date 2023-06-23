@@ -698,6 +698,7 @@ body{
     }
     .content-form textarea{
         width: 80%;
+        resize: none;
     }
 
     .pie-pagina{
