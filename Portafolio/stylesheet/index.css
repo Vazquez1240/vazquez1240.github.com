@@ -498,7 +498,7 @@ body{
         display: flex;
         flex-direction: row;
         margin: 0;
-        width: 47%;
+        width: 69%;
     }
     h2{
         margin: 0;
@@ -525,7 +525,6 @@ body{
     }
     .menu{
         width: auto;
-        margin-right: 1.5rem;
     }
     .list-menu li:nth-child(-n+5){
         display: none;
@@ -951,12 +950,4 @@ body{
     .pie-pagina{
         display: none;
     }
-}
-
-@media screen and(min-width:1001px) and (max-width:1424px){
-    body{
-        display: none;
-        display: block;
-    }
-    
 }

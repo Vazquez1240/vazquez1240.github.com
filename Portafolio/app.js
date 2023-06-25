@@ -80,6 +80,12 @@ function copiarTexto() {
     // Eliminar el elemento de textarea temporal
     document.body.removeChild(tempTextArea);
 
-    // Mostrar un mensaje de éxito
-    alert("Correo copiado correctamente!");
+    // Mostrar un mensaje de éxitoç
+    
+    Swal.fire({
+        title: "Exito",
+        text: "Correo copiado correctamente en el portapapeles",
+        icon: "success"
+    })
 }
+
