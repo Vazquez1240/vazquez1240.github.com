@@ -20,6 +20,14 @@ const direccionar = (id) =>{
             window.location.href = url;
             break
 
+        case 'sin-demo':
+            Swal.fire({
+                title:'Lo sentimos',
+                text: 'Este repositorio no tiene demo',
+                icon : 'error'
+            })
+            break
+
         default:
             alert('Este demo ya no esta en linea');
             break
@@ -46,6 +54,11 @@ const repository = (id) => {
         
         case 'pizzeria':
             url = 'https://github.com/Vazquez1240/vazquez1240.github.com/tree/main/voletines';
+            window.location.href = url;
+            break
+        
+        case 'tienda-virtual':
+            url = 'https://github.com/Vazquez1240/TiendaVirtual';
             window.location.href = url;
             break
 
