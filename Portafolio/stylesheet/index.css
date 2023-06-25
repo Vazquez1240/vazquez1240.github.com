@@ -498,7 +498,7 @@ body{
         display: flex;
         flex-direction: row;
         margin: 0;
-        width: 69%;
+        width: 43%;
     }
     h2{
         margin: 0;
@@ -542,7 +542,7 @@ body{
     .presentacion{
         width: 98%;
         margin: 0;
-        margin-left: .5rem;
+        margin-left: .3rem;
     }
     .content{
         display: flex;
