@@ -1,0 +1,79 @@
+body{
+        width: 100%;
+    }
+    main{
+        width: 99.9%;
+    }
+    .header{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .logo{
+        width: 100%;
+        margin-right: 2rem;
+    }
+    .nombre #nombre-item{
+        display: none;
+    }
+    .nombre .nombre-secundario{
+        display: flex;
+    }
+
+    .menu{
+        width: auto;
+        margin: 0;
+    }
+
+    .list-menu li:nth-child(-n+5){
+        display: none;
+    }
+
+    .presentacion{
+        margin: 0;
+        width: 100%;
+        border: 1px solid red;
+    }
+    .presentacion .content{
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    .content .descripcion{
+        width: auto;
+        margin-right: 4rem;
+    }
+
+    .content .descripcion h2{
+        width: 100%;
+        font-size: 29px;
+        font-weight: 900;
+        line-height: 2rem;
+        margin: 0;
+        height: auto;
+    }
+    .content .descripcipcion p{
+        text-align: justify;
+        margin: 0;
+    }
+    .content img{
+        width: 146px;
+        height: 146px;
+        border: 1px solid orange;
+        margin: 0;
+    }
+
+    .redes{
+        margin: 0;
+    }
+    .card-redes{
+        margin: 0;
+    }
+
+    .sobre-mi{
+        margin: 0;
+    }
+    .div-info{
+        margin: 0;
+        width: 99.9%;
+    }

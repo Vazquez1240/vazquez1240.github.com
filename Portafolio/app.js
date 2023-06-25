@@ -1,6 +1,4 @@
 
-
-
 const direccionar = (id) =>{
     switch (id){
         case 'barberia':
@@ -55,4 +53,33 @@ const repository = (id) => {
             alert('Este repositorio ya no existe!')
             break
     }
+}
+
+const btn_correo = document.querySelector('.contacto');
+
+btn_correo.addEventListener('click',copiarTexto)
+
+
+function copiarTexto() {
+    // Texto que deseas copiar
+    var texto = "vazquezmartin1240@gmail.com";
+
+    // Crear un elemento de textarea temporal
+    var tempTextArea = document.createElement("textarea");
+    tempTextArea.value = texto;
+
+    // Agregar el elemento de textarea al documento
+    document.body.appendChild(tempTextArea);
+
+    // Seleccionar el texto dentro del elemento de textarea
+    tempTextArea.select();
+
+    // Copiar el texto al portapapeles
+    document.execCommand("copy");
+
+    // Eliminar el elemento de textarea temporal
+    document.body.removeChild(tempTextArea);
+
+    // Mostrar un mensaje de éxito
+    alert("Correo copiado correctamente!");
 }
