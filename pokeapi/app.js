@@ -14,7 +14,13 @@ for (let i = 1; i <= 151; i++){
           // Mostrar los datos
           pokemonData.forEach((pokemon) => mostrarData(pokemon));
         }
-      }).catch((error) => console.log(error))
+      }).catch((error) => {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Hubo un problema al obtener los datos de los Pokémon'
+        })
+      })
 }
 
 
