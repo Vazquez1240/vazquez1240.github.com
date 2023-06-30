@@ -120,6 +120,12 @@ body{
 }
 
 
+@media screen and (max-width: 480px){
+    
+    
+}
+
+
 /* =================================================================*/
 .fire {
     background-color: var(--type-fire);

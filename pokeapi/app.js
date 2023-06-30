@@ -14,7 +14,7 @@ for (let i = 1; i <= 151; i++){
           // Mostrar los datos
           pokemonData.forEach((pokemon) => mostrarData(pokemon));
         }
-      });
+      }).catch((error) => console.log(error))
 }
 
 
