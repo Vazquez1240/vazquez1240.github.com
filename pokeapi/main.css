@@ -39,7 +39,12 @@ body{
     width: 95%;
     height: auto;
     display: flex;
-    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10rem;
 }
 .logo img{
     padding-left: 1rem;
@@ -47,7 +52,9 @@ body{
     height: auto;
     margin: 0;
 }
-
+.logo h2{
+    display: flex;
+}
 .main{
     margin: 0.35rem 1rem 1rem 1rem;
     height: auto;
