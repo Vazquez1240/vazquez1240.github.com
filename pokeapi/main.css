@@ -133,11 +133,8 @@ body{
         margin: 0;
         width: 95%;
     }
-    .header h2{
-        display: none;
-    }
     .main{
-        width: 98%;
+        width: 100%;
         margin: 0;
     }
     .container{
@@ -149,6 +146,26 @@ body{
 
     .container .card{
         margin: 0 0 0 .80rem;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .header{
+        width: 95%;
+    }
+    .main{
+        width: 97%;
+        margin: 0;
+    }
+
+    .container{
+        width: 100%;
+        margin: 0;
+        display: grid;
+        flex-direction: row;
+        grid-template-columns: repeat(3, 1fr)
+
     }
 }
 
@@ -237,8 +254,4 @@ body{
 .fairy {
     background-color: var(--type-fairy);
     color: var(--clr-black);
-}
-
-@media screen and (max-width: 768px) {
-    
 }
