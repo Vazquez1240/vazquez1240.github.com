@@ -129,8 +129,27 @@ body{
 
 
 @media screen and (max-width: 480px){
-    
-    
+    .header{
+        margin: 0;
+        width: 95%;
+    }
+    .header h2{
+        display: none;
+    }
+    .main{
+        width: 98%;
+        margin: 0;
+    }
+    .container{
+        width: 95%;
+        display: grid;
+        flex-direction: row;
+        grid-template-columns: repeat(1, 1fr)
+    }
+
+    .container .card{
+        margin-left: .80rem;
+    }
 }
 
 

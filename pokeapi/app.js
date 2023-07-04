@@ -4,8 +4,8 @@ for (let i = 1; i <= 151; i++){
     fetch(`https://pokeapi.co/api/v2/pokemon/${i}`)
     .then((response) => response.json())
     .then( data => {
-        pokemonData.push(data)
-  
+        pokemonData.push(data);
+
         if (pokemonData.length === 151) {
 
           pokemonData.sort((a, b) => a.id - b.id);
@@ -13,7 +13,11 @@ for (let i = 1; i <= 151; i++){
           pokemonData.forEach((pokemon) => mostrarData(pokemon));
         }
       }).catch((error) => {
-        console.log(error);
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Hubo un problema al obtener los datos de los Pokémon'
+        })
       })
 }
 
