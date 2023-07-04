@@ -4,14 +4,12 @@ for (let i = 1; i <= 151; i++){
     fetch(`https://pokeapi.co/api/v2/pokemon/${i}`)
     .then((response) => response.json())
     .then( data => {
-        pokemonData.push(data); // Almacenar los datos en el arreglo pokemonData
+        pokemonData.push(data)
   
-        // Verificar si se han obtenido todos los datos
         if (pokemonData.length === 151) {
-          // Ordenar los datos por número de Pokémon
+
           pokemonData.sort((a, b) => a.id - b.id);
   
-          // Mostrar los datos
           pokemonData.forEach((pokemon) => mostrarData(pokemon));
         }
       }).catch((error) => {
