@@ -148,7 +148,7 @@ body{
     }
 
     .container .card{
-        margin-left: .80rem;
+        margin: 0 0 0 .80rem;
     }
 }
 
@@ -237,4 +237,8 @@ body{
 .fairy {
     background-color: var(--type-fairy);
     color: var(--clr-black);
+}
+
+@media screen and (max-width: 768px) {
+    
 }
