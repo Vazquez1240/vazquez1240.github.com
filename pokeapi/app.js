@@ -57,3 +57,46 @@ function mostrarData(data){
 
     contenidos.append(linea)
 }
+
+
+function searchPokemon(){
+    
+    const pokemonName = document.getElementById('search').value.toLowerCase();
+    const nameLower = pokemonName.toLowerCase();
+
+    console.log(pokemonName);
+
+    let url = `https://pokeapi.co/api/v2/pokemon/${pokemonName}`;
+    fetch(url)
+    .then(response => response.json())
+    .then(data => {
+        contenidos.innerHTML = ''
+
+        const divContenedor = document.createElement('div');
+        divContenedor.classList.add('card');
+
+        const content = `
+        <div class="card-content">
+            <img src=${data.sprites.other['official-artwork'].front_default} alt=${data.name}>
+            <h2>${data.name}</h2>
+            <p class="numero-pokemon">#${data.id}</p>
+            <div class='poke-tipos'>
+                <p>tipos</p>
+            </div>
+            <div class="poke-datos">
+                <p>${data.height}m</p>
+                <p>${data.weight}Kg</p>
+            </div>
+        </div>`
+        divContenedor.innerHTML = content;
+
+        contenidos.append(divContenedor)
+    }).catch(error => {
+        Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Ese pokemon no existe'
+                })
+    })
+    
+}

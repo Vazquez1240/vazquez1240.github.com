@@ -36,8 +36,9 @@ body{
 
 .header{
     margin: 0.35rem 1rem 1rem 1rem;
-    width: 97%;
+    width: 98%;
     height: auto;
+    justify-content: space-between;
     display: flex;
 }
 .logo{
@@ -128,13 +129,18 @@ body{
 }
 
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 580px){
     .header{
         margin: 0;
-        width: 95%;
+        display: inline-flex;
+        width: 90%;
+    }
+    .logo{
+        display: none;
     }
     .main{
-        width: 100%;
+        width: 99%;
+        display: inline-flex;
         margin: 0;
     }
     .container{
@@ -145,14 +151,18 @@ body{
     }
 
     .container .card{
-        margin: 0 0 0 .80rem;
+        width: auto;
+        margin: 0 0 0 .50rem;
     }
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 581px) and (max-width: 758px) {
     .header{
         width: 95%;
+    }
+    .logo{
+        display: none;
     }
     .main{
         width: 97%;
@@ -164,8 +174,10 @@ body{
         margin: 0;
         display: grid;
         flex-direction: row;
-        grid-template-columns: repeat(3, 1fr)
-
+        grid-template-columns: repeat(2, 1fr)
+    }
+    .container .card{
+        margin: 0 0 0 .50rem;
     }
 }
 
@@ -253,5 +265,10 @@ body{
 
 .fairy {
     background-color: var(--type-fairy);
+    color: var(--clr-black);
+}
+
+.normal{
+    background-color: var(--type-normal);
     color: var(--clr-black);
 }
